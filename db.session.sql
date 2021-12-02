@@ -1,0 +1,1 @@
+select key from authtoken_token where user_id = 8
