@@ -15,6 +15,7 @@ class Product(models.Model):
                                    width_field=None, max_length=None, null=True, blank=True)
     category = models.ForeignKey(
         "Category", on_delete=models.CASCADE, related_name='products')
+    
 
     def save(self, *args, **kwargs):
         self.clean_fields()
