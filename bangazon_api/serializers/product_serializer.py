@@ -15,6 +15,7 @@ class CreateProductSerializer(serializers.Serializer):
     location = serializers.CharField()
     image = serializers.ImageField()
 
+
 class AddRemoveRecommendationSerializer(serializers.Serializer):
     username = serializers.CharField()
 
